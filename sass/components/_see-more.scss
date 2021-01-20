@@ -6,6 +6,10 @@
     overflow: hidden;
     @include isVisibleMoveUp;
 
+    @include respond(tab-port) {
+      width: 90vw;
+      padding: 9rem 5rem;
+    }
     @include respond(phone) {
       width: 100vw;
       padding: 9rem 4rem;
@@ -24,6 +28,9 @@
     font-size: 1.8rem;
     width: 50%;
 
+    @include respond(tab-port) {
+      width: 60%;
+    }
     @include respond(phone) {
       width: 100%;
       z-index: 5;

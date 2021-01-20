@@ -101,10 +101,12 @@
     transform: translate(30%, 0%);
     background-repeat: no-repeat;
 
+    @include respond(tab-port) {
+      z-index: -1;
+    }
     @include respond(phone) {
       top: 0%;
       right: -11%;
-      z-index: -1;
     }
   }
 }
