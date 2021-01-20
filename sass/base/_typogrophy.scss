@@ -1,22 +1,22 @@
 @font-face {
-  font-family: 'HelveticaNeueLTPro-Bd';
-  src: url('../../fonts/Linotype\ -\ HelveticaNeueLTPro-Bd.otf');
+  font-family: "HelveticaNeueLTPro-Bd";
+  src: url("../../fonts/Linotype\ -\ HelveticaNeueLTPro-Bd.otf");
 }
 @font-face {
-  font-family: 'HelveticaNeueLTPro-Md';
-  src: url('../../fonts/Linotype\ -\ HelveticaNeueLTPro-Md.otf');
+  font-family: "HelveticaNeueLTPro-Md";
+  src: url("../../fonts/Linotype\ -\ HelveticaNeueLTPro-Md.otf");
 }
 @font-face {
-  font-family: 'HelveticaNeueLTPro-MdCn';
-  src: url('../../fonts/Linotype\ -\ HelveticaNeueLTPro-MdCn.otf');
+  font-family: "HelveticaNeueLTPro-MdCn";
+  src: url("../../fonts/Linotype\ -\ HelveticaNeueLTPro-MdCn.otf");
 }
 @font-face {
-  font-family: 'HelveticaNeueLTPro-Roman';
-  src: url('../../fonts/Linotype\ -\ HelveticaNeueLTPro-Roman.otf');
+  font-family: "HelveticaNeueLTPro-Roman";
+  src: url("../../fonts/Linotype\ -\ HelveticaNeueLTPro-Roman.otf");
 }
 
 body {
-  font-family: 'HelveticaNeueLTPro-Md', cursive;
+  font-family: "HelveticaNeueLTPro-Md", default;
   font-weight: 400;
   font-size: $defaut-font-size;
   line-height: 1.7;
@@ -33,5 +33,5 @@ a:active {
   color: $color-primary-light;
 }
 .bld {
-  font-family: 'HelveticaNeueLTPro-Bd';
+  font-family: "HelveticaNeueLTPro-Bd";
 }
