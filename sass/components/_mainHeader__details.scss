@@ -3,13 +3,11 @@
     color: $color-primary;
     padding: 0.5rem;
     font-size: 4.85rem;
-    overflow: hidden;
     @include isVisibleMoveUp;
   }
   &__sub-title {
     font-size: 1.75rem;
     padding-top: 0.3rem;
-    overflow: hidden;
     @include isVisibleMoveUp;
   }
 
@@ -21,7 +19,6 @@
     align-self: center;
     padding: 0rem 2rem;
     margin: auto;
-    overflow: hidden;
     @include isVisibleMoveUp;
 
     @include respond(phone) {
