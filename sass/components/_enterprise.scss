@@ -24,9 +24,13 @@
     margin: auto;
     padding: 1rem 2rem 3rem 0;
 
+    @include respond(tab-port) {
+      align-items: center;
+    }
     @include respond(phone) {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
     }
 
     &-text {
@@ -48,7 +52,11 @@
       word-spacing: 0.5rem;
       cursor: pointer;
 
+      @include respond(tab-port) {
+        height: 5rem;
+      }
       @include respond(phone) {
+        height: auto;
         width: 45%;
         padding: 2.5rem 1rem;
         margin-top: 3rem;
