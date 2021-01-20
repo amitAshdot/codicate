@@ -21,7 +21,7 @@
 
 @mixin isVisibleMoveUp {
   & {
-    overflow-x: hidden;
+    overflow-y: hidden;
     transform: translateY(10%);
     opacity: 0;
     transition: all 0.7s;
