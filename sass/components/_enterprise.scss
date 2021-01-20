@@ -8,6 +8,10 @@
 
     @include isVisibleMoveUp;
 
+    @include respond(tab-port) {
+      width: 80vw;
+      margin: 4rem;
+    }
     @include respond(phone) {
       width: 90vw;
     }

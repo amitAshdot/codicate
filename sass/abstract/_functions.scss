@@ -1,6 +1,3 @@
 @function calcWidth($ratio) {
-  //   $result: 100vw * $ratio;
-  @debug 100vw * $ratio;
-
   @return 100vw * $ratio;
 }

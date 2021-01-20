@@ -9,7 +9,7 @@ table {
 }
 
 tr {
-  border-bottom: 1px solid $color-line;
+  border-bottom: 1px solid $color-border-line;
   &:first-child {
     border-bottom: 0;
     padding-bottom: 4rem;
@@ -25,11 +25,11 @@ tr {
   }
   & > td:first-child {
     text-align: left;
-    font-family: 'HelveticaNeueLTPro-Bd';
+    font-family: "HelveticaNeueLTPro-Bd";
   }
 }
 th {
-  font-family: 'HelveticaNeueLTPro-Bd';
+  font-family: "HelveticaNeueLTPro-Bd";
   padding: 3rem;
   font-size: 2.4rem;
 
@@ -55,7 +55,7 @@ td {
     line-height: 2.4rem;
 
     &:nth-child(2)::before {
-      content: '\A';
+      content: "\A";
       white-space: pre-line;
     }
   }

@@ -3,14 +3,8 @@ $color-primary: #9d00ff;
 $color-primary-light: #b718ff;
 $color-primary-dark: #8200d3;
 
-$color-grey-light-1: #d8dde1;
-$color-grey-light-2: #fbfcfc;
-$color-grey-light-3: #ebedee;
 $color-grey-light-main: #ededed;
 $color-grey-dark: #6b6d6e;
-$color-grey-dark-2: #333;
-$color-grey-dark-3: #3d3d3d;
-$color-footer-dark: #252525;
 
 $color-white: #ffffff;
 $color-black: #000;
@@ -18,30 +12,21 @@ $color-black-main: #201b22;
 
 //table
 $color-right: #d2d0dc;
-$color-line: #dbd5e6;
+$color-border-line: #dbd5e6;
 
 //font
 $defaut-font-size: 1.6rem;
 //grid
 $grid-width: 95rem;
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
-$gutter-horizontal: 6rem;
 
-//perspectiv
-$perspectiv-normal: 150rem;
-
-//dim
-$top-menu-height: 5rem;
-$bottom-menu-height: 5rem;
-
-//elements size to keep ratio
+//-----elements size to keep ratio  -----//
+//icons width
 $social-icons: 0.01687289089;
 $main-icons: 0.02808988764;
-
+//header
 $header-button-width: 0.0797752809;
 $header-button-w-padding: 0.008585858586;
 $header-button-h-padding: 0.007575757576;
-
+//main-header
 $maim-header-h-ratio: 0.2528089888;
 $menterprise-h-ratio: 0.1837078652;
