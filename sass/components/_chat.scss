@@ -1,0 +1,23 @@
+.chat {
+  position: fixed;
+  border-style: inset;
+  height: 17vh;
+  max-height: 20rem;
+  min-height: 15rem;
+  width: 17vw;
+  min-width: 30rem;
+  max-width: 40rem;
+  bottom: 1rem;
+  z-index: 10;
+
+  transition: all 0.4s;
+  &-icon {
+    position: absolute;
+    width: 5.5rem;
+    right: 1.5rem;
+    bottom: 2rem;
+    filter: drop-shadow(0 0rem 0.4rem rgba(0, 0, 0, 0.7));
+
+    animation: shake 0.8s ease-in-out infinite alternate;
+  }
+}

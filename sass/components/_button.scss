@@ -1,0 +1,36 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-family: 'HelveticaNeueLTPro-Bd';
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.2s;
+    backface-visibility: hidden;
+
+    border: none;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem) scale(1.03);
+    box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.2);
+    backface-visibility: hidden;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.6);
+    //
+  }
+  &:focus {
+    outline: none;
+  }
+}

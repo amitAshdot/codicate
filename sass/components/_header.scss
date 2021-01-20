@@ -1,0 +1,130 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  padding: 1.5rem 1rem 0rem 1.5rem;
+  background: $color-grey-light-main;
+  box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.19);
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+
+  transition: all 0.2s ease-in-out;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__logo {
+      & img {
+        filter: invert(1);
+        width: 7vw;
+        max-width: 160px;
+        min-width: 120px;
+        padding-top: 1rem;
+        @include respond(phone) {
+          padding-left: 1rem;
+        }
+      }
+    }
+    &__menu {
+      display: flex;
+      padding-top: 1rem;
+
+      &-list {
+        display: flex;
+        @include respond(phone) {
+          flex-wrap: wrap;
+        }
+
+        & a {
+          font-family: "HelveticaNeueLTPro-Bd";
+          margin: 0 1.3rem;
+          padding: 1rem 2rem;
+          font-size: 1.2rem;
+          @include respond(tab-port) {
+            padding: 0;
+          }
+          @include respond(phone) {
+            font-size: 1.35rem;
+          }
+
+          &:hover {
+            color: $color-primary;
+            cursor: pointer;
+          }
+        }
+      }
+      &-button {
+        font-family: "HelveticaNeueLTPro-Bd";
+        color: $color-white;
+        background: $color-primary;
+        padding: 1rem 2rem;
+        margin: 0rem 0.5rem;
+        font-size: 1.25rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+  &__bottom {
+    color: $color-grey-dark;
+    padding-top: 1.5rem;
+    transition: 0.2s;
+
+    &-list {
+      display: flex;
+      justify-content: center;
+
+      & a {
+        font-family: "HelveticaNeueLTPro-Roman";
+        position: relative;
+        text-align: center;
+        padding: 0.5rem 2rem;
+        font-size: 1.4rem;
+        line-height: 3rem;
+
+        transition: all 0.2s ease-in-out;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0px;
+          left: 50%;
+          width: 0%;
+          border-bottom: 1px solid $color-primary;
+          transition: all 0.3s;
+        }
+        &:hover {
+          color: $color-primary-light;
+          cursor: pointer;
+          &::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+        &.active {
+          content: "";
+          display: block;
+          bottom: 0px;
+          width: 100%;
+          transition: 0.5s;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 0%;
+            width: 100%;
+            border-bottom: 1px solid $color-primary;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

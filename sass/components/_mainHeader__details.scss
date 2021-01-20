@@ -1,0 +1,80 @@
+.mainHeader {
+  &__title {
+    color: $color-primary;
+    padding: 0.5rem;
+    font-size: 4.85rem;
+    overflow: hidden;
+    @include isVisibleMoveUp;
+  }
+  &__sub-title {
+    font-size: 1.75rem;
+    padding-top: 0.3rem;
+    overflow: hidden;
+    @include isVisibleMoveUp;
+  }
+
+  &__details {
+    width: 73%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    padding: 0rem 2rem;
+    margin: auto;
+    overflow: hidden;
+    @include isVisibleMoveUp;
+
+    @include respond(phone) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item {
+      width: 25vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5.5rem 5rem 0;
+      @include respond(phone) {
+        width: 90vw;
+      }
+
+      & img {
+        width: 5rem;
+        margin: 1.65rem;
+      }
+      & h4 {
+        font-family: "HelveticaNeueLTPro-Bd";
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+
+        margin-bottom: 1.7rem;
+        width: 70%;
+      }
+      & p {
+        font-family: "HelveticaNeueLTPro-Roman";
+        line-height: 2.5rem;
+        font-size: 1.67rem;
+      }
+
+      @include respond(small-desktop) {
+        padding: 5.5rem 2rem 0;
+      }
+      @include respond(tab-land) {
+        padding: 5.5rem 2rem 0;
+      }
+
+      @include respond(mini-desktop) {
+        padding: 5.5rem 2rem 0;
+      }
+      @include respond(tab-port) {
+        padding: 5.5rem 2rem 0;
+      }
+
+      @include respond(phone) {
+        padding: 2.5rem 2rem 0;
+      }
+    }
+  }
+}

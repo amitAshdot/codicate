@@ -1,0 +1,110 @@
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  background: url("../../images/Header_BG.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+  &-container {
+    padding: 7rem 3rem 6rem;
+    margin-top: 10rem;
+    @include respond(phone) {
+      margin-top: 15rem;
+    }
+  }
+}
+
+.details-section {
+  padding: 5rem 0rem;
+  text-align: center;
+  width: $grid-width + 1rem;
+  margin: auto;
+
+  &__explain {
+    margin: auto;
+    &-title {
+      color: $color-primary;
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+    }
+    &-text {
+      font-size: 1.75rem;
+      line-height: 2.8rem;
+    }
+  }
+
+  &__table {
+    background: url("../../images/tableBG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 25%;
+    background-size: 70%;
+
+    width: 100%;
+    text-align: center;
+    @include isVisibleFade;
+
+    &-title {
+      font-size: 3.5rem;
+    }
+
+    &-midColumn {
+      box-shadow: -10px 10px 26px -5px #d9d9d9;
+    }
+  }
+
+  @include respond(small-desktop) {
+  }
+  @include respond(tab-land) {
+  }
+
+  @include respond(mini-desktop) {
+  }
+  @include respond(tab-port) {
+    width: 80vw;
+  }
+
+  @include respond(phone) {
+  }
+}
+
+.enterprise-section {
+  background: url("../../images/Enterprise_BG.png");
+  background-size: cover;
+  padding: 5rem;
+  text-align: left;
+  @include respond(phone) {
+    padding: 0rem;
+  }
+}
+
+.see-more-section {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(233, 235, 236, 1) 100%
+  );
+
+  &__background {
+    position: absolute;
+    background: url(../../images/see-more-background.png);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    right: -19%;
+    transform: translate(30%, 0%);
+    background-repeat: no-repeat;
+
+    @include respond(phone) {
+      top: 0%;
+      right: -11%;
+      z-index: -1;
+    }
+  }
+}
