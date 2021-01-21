@@ -27,6 +27,15 @@
         border-bottom-left-radius: 2rem;
         box-shadow: 0rem 0px 2rem $color-grey-table-shadow;
 
+        transition: all 0.2s;
+        &:hover {
+          transform: scale(1.01);
+          box-shadow: 0rem 0px 2rem $color-grey-table-shadow-hover;
+        }
+        & p:hover {
+          color: $color-primary;
+        }
+
         & > p {
           @include tableP;
           justify-content: center;
@@ -42,6 +51,12 @@
         width: 33%;
         border-top-right-radius: 2rem;
         border-bottom-right-radius: 2rem;
+        transition: all 0.2s;
+
+        & p:hover {
+          color: $color-primary;
+        }
+
         & > p {
           @include tableP;
           flex-direction: column;
