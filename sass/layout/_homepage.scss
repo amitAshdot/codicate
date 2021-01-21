@@ -66,12 +66,26 @@
 }
 
 .enterprise-section {
-  background: url("https://amitashdot.github.io/codicate/images/Enterprise_BG.png");
-  background-size: cover;
+  position: relative;
   padding: 5rem;
   text-align: left;
   @include respond(phone) {
     padding: 0rem;
+  }
+
+  // to add filter to background without effect the child
+  &::after {
+    content: "";
+    background: url("https://amitashdot.github.io/codicate/images/Enterprise_BG.png")
+      no-repeat;
+    position: absolute;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: saturate(1.2); /* Here is your opacity */
   }
 }
 
