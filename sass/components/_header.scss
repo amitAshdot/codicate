@@ -48,6 +48,9 @@
           font-size: 1.2rem;
           overflow: hidden;
 
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+
           @include respond(tab-port) {
             padding: 0;
           }
@@ -58,6 +61,9 @@
           &:hover {
             color: $color-primary;
             cursor: pointer;
+          }
+          &::-webkit-scrollbar {
+            display: none;
           }
         }
       }
@@ -79,7 +85,9 @@
     &-list {
       display: flex;
       justify-content: center;
-
+      & > ::maker {
+        display: none;
+      }
       & a {
         font-family: "HelveticaNeueLTPro-Roman";
         position: relative;
