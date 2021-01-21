@@ -68,8 +68,8 @@ const moveOutLeft = e => {
 };
 
 
-//redirect
-let url = window.location;
-if (url != "https://amitashdot.github.io/codicate/")
-    window.location.replace("https://amitashdot.github.io/codicate/");
+// //redirect
+// let url = window.location;
+// if (url != "https://amitashdot.github.io/codicate/")
+//     window.location.replace("https://amitashdot.github.io/codicate/");
 

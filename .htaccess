@@ -1,0 +1,14 @@
+#WWW Rewriter
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://amitashdot.github.io/codicate/[nc]
+RewriteRule ^(.*)$ http:#www.https://amitashdot.github.io/codicate//$1 [r=301,nc]
+#WWW Rewriter
+#301 Redirects
+#Redirect file/s using 301
+Redirect 301  https://amitashdot.github.io/codicate/
+#301 Redirects
+#Error 404
+ErrorDocument 404 /
+#Error 404
+
