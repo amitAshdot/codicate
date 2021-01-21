@@ -16,20 +16,10 @@
       place-content: space-between;
       width: 70%;
 
-      @include respond(small-desktop) {
-      }
-      @include respond(tab-land) {
-      }
-
-      @include respond(mini-desktop) {
-      }
       @include respond(tab-port) {
         place-content: space-between;
         width: 90vw;
         margin: 5rem auto;
-      }
-
-      @include respond(phone) {
       }
     }
     &-rewards {
@@ -38,24 +28,16 @@
         width: 11rem;
       }
     }
-    @include respond(small-desktop) {
-    }
-    @include respond(tab-land) {
-    }
 
-    @include respond(mini-desktop) {
-    }
     @include respond(tab-port) {
       padding: 0 0rem;
       flex-direction: column-reverse;
-    }
-
-    @include respond(phone) {
     }
   }
   &-bottom {
     &-text {
       font-size: 1.2rem;
+      padding-left: 10%;
     }
   }
   &__links {
@@ -64,26 +46,13 @@
     width: 20%;
 
     &-headline {
-      font-family: "HelveticaNeueLTPro-Bd";
-
       color: $color-primary;
       font-size: 1.4rem;
 
       &__social {
         display: flex;
-
-        @include respond(small-desktop) {
-        }
-        @include respond(tab-land) {
-        }
-
-        @include respond(mini-desktop) {
-        }
         @include respond(tab-port) {
           flex-wrap: wrap;
-        }
-
-        @include respond(phone) {
         }
 
         &-icon {
@@ -95,7 +64,7 @@
           margin: 1rem 0.5rem 3rem;
           transition: all 0.2s ease-in-out;
           &:hover {
-            transform: scale(1.3);
+            transform: scale(1.2);
           }
         }
       }
@@ -113,8 +82,11 @@
       }
 
       &-small {
-        font-family: "HelveticaNeueLTPro-Md";
         font-size: 1.4rem;
+
+        & > span {
+          white-space: nowrap;
+        }
       }
     }
 
@@ -130,65 +102,25 @@
         transform: scale(1.2);
       }
     }
-    @include respond(small-desktop) {
-    }
+
     @include respond(tab-land) {
       width: 25%;
     }
-
-    @include respond(mini-desktop) {
-    }
-    @include respond(tab-port) {
-    }
-
-    @include respond(phone) {
-    }
   }
 
-  @include respond(small-desktop) {
-  }
-  @include respond(tab-land) {
-  }
-
-  @include respond(mini-desktop) {
-  }
   @include respond(tab-port) {
     padding: 8rem 0;
-  }
-
-  @include respond(phone) {
   }
 
   &-rewards {
     display: flex;
     flex-direction: column;
-
-    @include respond(small-desktop) {
-    }
-    @include respond(tab-land) {
-    }
-
-    @include respond(mini-desktop) {
-    }
     @include respond(tab-port) {
       flex-direction: row;
     }
-
-    @include respond(phone) {
-    }
   }
 
-  @include respond(small-desktop) {
-  }
-  @include respond(tab-land) {
-  }
-
-  @include respond(mini-desktop) {
-  }
   @include respond(tab-port) {
     padding: 5rem 0;
-  }
-
-  @include respond(phone) {
   }
 }

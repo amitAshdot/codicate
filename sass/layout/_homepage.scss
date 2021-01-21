@@ -55,18 +55,6 @@
     &-title {
       font-size: 3.5rem;
     }
-
-    &-midColumn {
-      box-shadow: -10px 10px 26px -5px #d9d9d9;
-    }
-  }
-
-  @include respond(small-desktop) {
-  }
-  @include respond(tab-land) {
-  }
-
-  @include respond(mini-desktop) {
   }
   @include respond(tab-port) {
     width: 80vw;

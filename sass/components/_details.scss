@@ -13,7 +13,6 @@
       flex-direction: column;
 
       &-left {
-        font-family: "HelveticaNeueLTPro-Bd";
         background: transparent;
         width: 33%;
 
@@ -22,13 +21,11 @@
         }
       }
       &-mid {
-        font-family: "HelveticaNeueLTPro-Roman";
-
         background: rgba($color-white, 0.6);
         width: 33%;
         border-top-left-radius: 2rem;
         border-bottom-left-radius: 2rem;
-        box-shadow: 0rem 0px 2rem #bbbbbb;
+        box-shadow: 0rem 0px 2rem $color-grey-table-shadow;
 
         & > p {
           @include tableP;
@@ -41,8 +38,6 @@
         }
       }
       &-right {
-        font-family: "HelveticaNeueLTPro-Roman";
-
         background: rgba($color-right, 0.4);
         width: 33%;
         border-top-right-radius: 2rem;

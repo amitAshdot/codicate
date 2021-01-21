@@ -20,7 +20,7 @@
 }
 
 @mixin tableP {
-  border-bottom: 1px solid #dcd6e7;
+  border-bottom: 1px solid $color-border-line;
   font-size: 1.75rem;
   height: 6.5rem;
   display: flex;

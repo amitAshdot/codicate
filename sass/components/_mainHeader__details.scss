@@ -81,20 +81,6 @@
       @include respond(small-desktop) {
         padding: 5.5rem 2rem 0;
       }
-      @include respond(tab-land) {
-        padding: 5.5rem 2rem 0;
-      }
-
-      @include respond(mini-desktop) {
-        padding: 5.5rem 2rem 0;
-      }
-      @include respond(tab-port) {
-        padding: 5.5rem 2rem 0;
-      }
-
-      @include respond(phone) {
-        padding: 2.5rem 2rem 0;
-      }
     }
   }
 }
