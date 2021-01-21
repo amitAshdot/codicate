@@ -40,7 +40,7 @@ loop();
 
 
 //check scroll direction
-window.onscroll = function (e) {
+window.onscroll = (e) => {
     let header = document.getElementsByClassName("header");
     let chat = document.getElementsByClassName("chat");
     if (this.oldScroll < this.scrollY && this.scrollY > 140) {
@@ -66,3 +66,10 @@ const moveInLeft = e => {
 const moveOutLeft = e => {
     e[0].style.transform = "translateX(-100%)";
 };
+
+
+//redirect
+let url = window.location;
+if (url != "https://amitashdot.github.io/codicate/")
+    window.location.replace("https://amitashdot.github.io/codicate/");
+
