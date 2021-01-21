@@ -3,12 +3,12 @@
     color: $color-primary;
     padding: 0.5rem;
     font-size: 4.85rem;
-    @include isVisibleMoveUp;
+    @include isVisibleFade;
   }
   &__sub-title {
     font-size: 1.75rem;
     padding-top: 0.3rem;
-    @include isVisibleMoveUp;
+    @include isVisibleFade;
   }
 
   &__details {
@@ -19,7 +19,7 @@
     align-self: center;
     padding: 0rem 2rem;
     margin: auto;
-    @include isVisibleMoveUp;
+    @include isVisibleFade;
 
     @include respond(phone) {
       width: 100%;

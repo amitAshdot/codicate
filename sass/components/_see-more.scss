@@ -3,7 +3,8 @@
     width: $grid-width + 3rem;
     margin: auto;
     padding: 9rem 1rem;
-    @include isVisibleMoveUp;
+    @include isVisibleFade;
+    overflow-y: hidden;
 
     @include respond(tab-port) {
       width: 90vw;

@@ -10,7 +10,7 @@ let scroll =
 let elementsToShow = document.querySelectorAll(".show-on-scroll");
 
 const isElementInViewport = (el) => {
-    const pixFromElementTop = 80;
+    const pixFromElementTop = 20;
     let rect = el.getBoundingClientRect();
     return (
         (rect.top + pixFromElementTop <= 0 && rect.bottom >= 0) ||

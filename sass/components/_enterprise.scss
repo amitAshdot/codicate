@@ -5,7 +5,7 @@
     margin-top: 4rem;
     padding-left: 1rem;
 
-    @include isVisibleMoveUp;
+    @include isVisibleFade;
 
     @include respond(tab-port) {
       width: 80vw;

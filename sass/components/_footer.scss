@@ -5,7 +5,7 @@
   margin-bottom: 15rem;
   max-width: 200rem;
   margin: auto;
-  @include isVisibleMoveUp;
+  @include isVisibleFade;
 
   &-top {
     display: flex;
