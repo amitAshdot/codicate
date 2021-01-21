@@ -3,7 +3,8 @@
   flex-direction: column;
   padding: 8rem;
   margin-bottom: 15rem;
-
+  max-width: 200rem;
+  margin: auto;
   @include isVisibleMoveUp;
 
   &-top {
