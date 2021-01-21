@@ -1,0 +1,64 @@
+.details {
+  &-table {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+
+    &-title {
+      font-size: 3.7rem;
+      margin: 5rem 0 2rem;
+    }
+    &__col {
+      display: flex;
+      flex-direction: column;
+
+      &-left {
+        font-family: "HelveticaNeueLTPro-Bd";
+        background: transparent;
+        width: 33%;
+
+        & > p {
+          @include tableP;
+        }
+      }
+      &-mid {
+        font-family: "HelveticaNeueLTPro-Roman";
+
+        background: rgba($color-white, 0.6);
+        width: 33%;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        box-shadow: 0rem 0px 2rem #bbbbbb;
+
+        & > p {
+          @include tableP;
+          justify-content: center;
+          align-items: center;
+
+          & > img {
+            width: 2.3rem;
+          }
+        }
+      }
+      &-right {
+        font-family: "HelveticaNeueLTPro-Roman";
+
+        background: rgba($color-right, 0.4);
+        width: 33%;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        & > p {
+          @include tableP;
+          flex-direction: column;
+
+          justify-content: center;
+          align-items: center;
+
+          & > span {
+            line-height: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+}

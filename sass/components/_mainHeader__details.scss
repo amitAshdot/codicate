@@ -36,18 +36,41 @@
       @include respond(phone) {
         width: 90vw;
       }
+      &:hover > img {
+        transform: scale(1.1);
+      }
 
       & img {
         width: 5rem;
         margin: 1.65rem;
+        transition: all 0.3s;
       }
+
+      &:hover h4 {
+        background-position: 0 100%;
+      }
+
       & h4 {
         font-family: "HelveticaNeueLTPro-Bd";
         font-size: 1.9rem;
         line-height: 2.5rem;
-
         margin-bottom: 1.7rem;
         width: 70%;
+
+        background: linear-gradient(
+          to right,
+          $color-primary,
+          $color-primary 50%,
+          black 50%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        overflow: hidden;
+        transition: background-position 0.275s ease;
+        text-decoration: none;
       }
       & p {
         font-family: "HelveticaNeueLTPro-Roman";
