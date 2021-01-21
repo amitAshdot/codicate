@@ -96,15 +96,6 @@
       width: 10%;
     }
 
-    & > img {
-      object-fit: contain;
-
-      transition: all 0.2s ease-in-out;
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-
     @include respond(tab-land) {
       width: 25%;
     }
@@ -117,8 +108,15 @@
   &-rewards {
     display: flex;
     flex-direction: column;
+
     @include respond(tab-port) {
       flex-direction: row;
+    }
+    & > img {
+      transition: all 0.1s ease-in-out;
+    }
+    & > img:hover {
+      transform: scale(1.2);
     }
   }
 
