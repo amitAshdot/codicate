@@ -66,10 +66,3 @@ const moveInLeft = e => {
 const moveOutLeft = e => {
     e[0].style.transform = "translateX(-100%)";
 };
-
-
-// //redirect
-// let url = window.location;
-// if (url != "https://amitashdot.github.io/codicate/")
-//     window.location.replace("https://amitashdot.github.io/codicate/");
-
